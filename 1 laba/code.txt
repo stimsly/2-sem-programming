@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int N = 60;
+
+ifstream fin("input_string.txt");
+ifstream fin_l("input_letter.txt");
+ofstream fout("output.txt");
+
+struct str {
+	char a[N + 1];
+	char mark;
+};
+
+void read(str& s, char& letter, int t){
+	fin_l.get(letter);
+	fin.get(s.mark);
+	char o = ' ';
+	if(t == 1)fin.get(o);
+	int i = 0;
+	while (fin.get(s.a[i]) && i < N && (s.a[i] != o || o == ' ')){
+		i++;
+	}
+	s.a[i] = s.mark;
+}
+
+void write(str& s) {
+	int i = 0;
+	while (s.mark != s.a[i] && i < N) {
+		fout << s.a[i]; i++;
+	}
+}
+
+void delete_letter_from_string(str &s, char &letter){
+	int i = 0;
+	while (s.mark != s.a[i]) {
+		if (s.a[i] == letter) {
+			int j = i;
+			while (s.mark != s.a[j]) {
+				s.a[j] = s.a[j+1];
+				j++;
+			}
+		}
+		i++;
+	}
+	
+}
+
+int main() {
+	int t;
+	cin >> t;
+	char delete_letter;
+	str s;
+	read(s, delete_letter, t);
+	delete_letter_from_string(s, delete_letter);
+	write(s);
+	return 0;
+}
