@@ -1,0 +1,7 @@
+﻿  main.cpp
+D:\re\ConsoleApplication13\ConsoleApplication13\main.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\re\ConsoleApplication13\ConsoleApplication13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  text_progress.cpp
+D:\re\ConsoleApplication13\ConsoleApplication13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...
+  ConsoleApplication13.vcxproj -> D:\re\ConsoleApplication13\Debug\ConsoleApplication13.exe
