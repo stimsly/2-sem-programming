@@ -1,0 +1,75 @@
+#include <bits/stdc++.h>
+#include <fstream>
+
+using namespace std;
+
+const int N = 60;
+
+class str {
+private:
+	char a[N]; 
+	char letter;
+	int len = 0;
+public:
+	int getlen() {
+		return len;
+	}
+	void setlen(int t) {
+		len = t;
+	}
+	char get_char(int i) {
+		return a[i];
+	}
+	void inp(ifstream &f_s, ifstream &f_l, int t) {
+		if (!f_s.is_open() or !f_l.is_open()) {
+			cout << "File(s) can not be open!";
+			return;
+		}
+		char o = ' ';
+		int n = N;
+		if (t == 1) {
+			f_s.get(o);
+		}
+		else {
+			f_s >> n;
+			f_s.get();
+		}
+		n = max(0, min(n, N));
+		f_l.get(letter);
+		while (f_s.get(a[len]) && len < n && (a[len] != o || o == ' ')) {
+			len++;
+		}
+	}
+	void out(ofstream& f) {
+		for (int i = 0; i < len; i++) f << a[i];
+		if (len == 0) f << "empty";
+		f << endl;
+	}
+	void process(){
+		int k = 0;
+		for (int i = 0; i < len; i++) {
+			a[k] = a[i];
+			if (a[i] != letter) k++;
+		}
+		setlen(k);
+	}
+} s;
+
+
+int main() {
+	int t;
+	cin >> t;
+
+	ifstream fin("input_string.txt");
+	ifstream fin_l("input_letter.txt");
+	ofstream fout("output.txt");
+
+
+	s.inp(fin, fin_l, t);
+	fout << "Primary string: ";
+	s.out(fout);
+	s.process();
+	fout << "Result string: ";
+	s.out(fout);
+	return 0;
+}

@@ -14,6 +14,10 @@ struct str {
 };
 
 void read(str& s, char& letter, int t){
+	if (!fin_l.is_open() or !fin.is_open()) {
+		cout << "File(s) can not be open!";
+		return;
+	}
 	fin_l.get(letter);
 	fin.get(s.mark);
 	char o = ' ';
