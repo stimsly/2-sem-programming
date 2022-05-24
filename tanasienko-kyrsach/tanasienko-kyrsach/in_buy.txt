@@ -1,0 +1,25 @@
+4
+1
+10
+10
+500000
+Mira 116
+groove district
+10
+5
+100
+5000000
+Russia st. Moscow Mira st.
+USA district
+10
+5
+200
+5000000
+Russia st. Moscow Mira st.
+Ukrainka district
+5
+10
+15
+5000000
+Russia st. Moscow Mira st.
+USA district

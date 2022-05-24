@@ -1,0 +1,10 @@
+﻿  didKursach.cpp
+D:\SCHOOL\tanasienko-kyrsach\tanasienko-kyrsach\didKursach.cpp(26,17): warning C4244: =: преобразование "unsigned short" в "char", возможна потеря данных
+D:\SCHOOL\tanasienko-kyrsach\tanasienko-kyrsach\didKursach.cpp(29,21): warning C4244: =: преобразование "unsigned short" в "char", возможна потеря данных
+  info.cpp
+D:\SCHOOL\tanasienko-kyrsach\tanasienko-kyrsach\info.cpp(22,133): warning C4244: аргумент: преобразование "const __int64" в "const long", возможна потеря данных
+D:\SCHOOL\tanasienko-kyrsach\tanasienko-kyrsach\info.cpp(43,17): warning C4244: =: преобразование "const __int64" в "long", возможна потеря данных
+  list.cpp
+D:\SCHOOL\tanasienko-kyrsach\tanasienko-kyrsach\list.cpp(84,66): warning C4244: аргумент: преобразование "__int64" в "const long", возможна потеря данных
+  Создание кода...
+  tanasienko-kyrsach.vcxproj -> D:\SCHOOL\tanasienko-kyrsach\Debug\tanasienko-kyrsach.exe

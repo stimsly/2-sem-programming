@@ -1,0 +1,32 @@
+This man input products and materials
+This man ask about list of products(he enter 1)
+This man ask about list of materials(he enter 2)
+This man start baking))
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man try to bake next round
+This man spend all the resources
+He can win 20
+Materials left:
+мука 1202723
+изюм 13123
+пудра 0
+€йца 2000
