@@ -10,7 +10,8 @@ private:
 	form_x mater;
 public:
 	
-	void progress(ofstream &fout_rep);
+	void progress(ofstream &fout_rep, int &res);
+	void add() { mater.add(); };
 	void input(ifstream &f1, ifstream &f2, ofstream &fout_rep) {
 		prod.input(f1);
 		mater.input_mater(f2);

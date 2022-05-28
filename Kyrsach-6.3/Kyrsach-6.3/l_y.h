@@ -28,7 +28,7 @@ public:
 
 	void clear();
 	void output();
-	void calc(char(&a)[100][30], int(&was)[100], int(&s)[100], int(&len)){ line.calc(a, was, s, len); };
+	void calc2(char(&a)[100][30], int(&was)[100], int(&s)[100], int(&len)) { line.calc2(a, was, s, len); };
 
 	
 };

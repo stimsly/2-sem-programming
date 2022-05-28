@@ -21,7 +21,8 @@ public:
 		this->next = next;
 	}
 	l_x* get_next();
-	void set_next(l_x* next) ;
+	void set_next(l_x* next);
+	void add_(int x) { cur.set_amount(cur.get_amount() + x); };
 
 	int get_size();
 	int get_amount() { return cur.get_amount(); };

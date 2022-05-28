@@ -72,7 +72,7 @@ void form_y::push_back(int n, int amount[30], char a[30][30], int size[30]) {
 void form_y::calc(char(&a)[100][30], int(&was)[100], int(&s)[100], int(&len)) {
 	cur = head;
 	while (cur != nullptr) {
-		cur->calc(a, was, s, len);
+		cur->calc2(a, was, s, len);
 		cur = cur->get_next();
 
 	}

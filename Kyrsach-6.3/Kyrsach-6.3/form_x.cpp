@@ -2,6 +2,22 @@
 
 bool form_x::empty() { return head == nullptr; };
 
+void form_x::add() {
+	cout << "Enter the number u want to add (x >= 0) for the next products:\n";
+	cur = head;
+	while (cur != nullptr) {
+		for (int i = 0; i < cur->get_size(); i++) {
+			cout << cur->get_i(i);
+		}
+		cout << " ";
+		int x;
+		cin >> x;
+		cur->add_(x);
+
+		cur = cur->get_next();
+	}
+}
+
 void form_x::push_back(char a[], int size, int amount) {
 	if (empty()) {
 		this->head = new l_x(a, size, amount);
@@ -45,6 +61,26 @@ void form_x::calc(char (&a)[100][30], int (&was)[100], int (&s)[100], int &len) 
 		j++;
 	}
 	len = j;
+}
+void form_x::calc2(char(&a)[100][30], int(&was)[100], int(&s)[100], int& len) {
+	cur = head;
+	cur = cur->get_next();
+	int j = 0;
+	while (cur != nullptr) {
+		if (cur->get_amount() == 0) {
+			cur = cur->get_next();
+			continue;
+		}
+		for (int i = 0; i < cur->get_size(); i++) {
+			a[len+j][i] = cur->get_i(i);
+			a[len+j][i + 1] = '#';
+		}
+		s[len+j] = cur->get_size();
+		was[len+j] = cur->get_amount();
+		cur = cur->get_next();
+		j++;
+	}
+	len += j;
 }
 
 

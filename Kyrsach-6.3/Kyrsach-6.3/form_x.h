@@ -20,10 +20,12 @@ public:
 	void set_cur(l_x* a) { cur = a; };
 	void set_head(l_x* a) { head = a; };
 	void calc(char(&a)[100][30], int(&was)[100], int(&s)[100], int(&len));
+	void calc2(char(&a)[100][30], int(&was)[100], int(&s)[100], int(&len));
 
 	void input_prod(ifstream& f);
 	void input_mater(ifstream& f);
 	void output();
+	void add();
 };
 
 #endif
