@@ -1,0 +1,29 @@
+This man input products and materials
+This man start burgering))
+Burger: big burger was prepaired
+bread 80
+meat 45
+solt 100
+egg 10
+cheaps 10
+Burger: shit burger was prepaired
+bread 60
+meat 45
+solt 95
+egg 10
+cheaps 10
+Burger: shit2 burger was prepaired
+bread 50
+meat 45
+solt 90
+eggcheaps 10
+Burger: big burger was prepaired
+bread 30
+meat 40
+solt 90
+eggcheaps 10
+Burger: shit burger was prepaired
+bread 10
+meat 40
+solt 85
+eggcheaps 10

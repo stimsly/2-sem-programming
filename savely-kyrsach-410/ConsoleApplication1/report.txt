@@ -1,0 +1,13 @@
+This man input products and materials
+This man ask about list of products(he enter 1)
+This man ask about list of materials(he enter 2)
+This man start burgering))
+Was prepaired 5 burgers
+Finish
+This man add some materials))
+This man ask about list of products(he enter 1)
+This man ask about list of materials(he enter 2)
+This man start burgering))
+Was prepaired 6 burgers
+Finish
+End of programm
