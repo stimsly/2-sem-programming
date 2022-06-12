@@ -71,11 +71,13 @@ void form_y::push_back(char a[100], int aa, int k, ofstream &fout) {
 		cur = head;
 		int x = 1;
 		last = nullptr;
-		while (cur->get_next() != nullptr) {
+		while (cur != nullptr) {
 			char b[100];
 			int bb = 0;
 			cur->get_all_line(b, bb);
+			//fout << cur->get_k() << " " << k << endl;
 			if (cur->get_k() < k) {
+				
 				last = cur;
 				cur = cur->get_next();
 			}
@@ -97,10 +99,13 @@ void form_y::push_back(char a[100], int aa, int k, ofstream &fout) {
 		}
 		fout << " вставленно на позицию: " << x << endl;;
 
-		if(cur->get_next() == nullptr)cur->set_next(new l_y(a, aa, k));
-		else if (last == nullptr) {
+		if (x == 1) {
 			head = new l_y(a, aa, k, cur);
 
+			
+		}
+		else if (cur == nullptr) {
+			last->set_next(new l_y(a, aa, k));
 		}
 		else {
 			

@@ -1,0 +1,15 @@
+﻿  main.cpp
+D:\SCHOOL\2-sem-programming\2)savely-13\2)savely-13\main.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\SCHOOL\2-sem-programming\2)savely-13\2)savely-13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  StrL_getchar.cpp
+  StrL_getlen.cpp
+  StrL_setchar.cpp
+  StrL_setlen.cpp
+  text_input.cpp
+D:\SCHOOL\2-sem-programming\2)savely-13\2)savely-13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  text_output.cpp
+D:\SCHOOL\2-sem-programming\2)savely-13\2)savely-13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  text_progress.cpp
+D:\SCHOOL\2-sem-programming\2)savely-13\2)savely-13\text.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...
+  2)savely-13.vcxproj -> D:\SCHOOL\2-sem-programming\2)savely-13\Debug\2)savely-13.exe

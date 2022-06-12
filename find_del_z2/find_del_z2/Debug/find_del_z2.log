@@ -1,0 +1,4 @@
+﻿  find_del_z2.cpp
+D:\SCHOOL\2-sem-programming\find_del_z2\find_del_z2\find_del_z2.cpp(23,27): warning C4334: <<: результат 32-разрядного смещения неявно преобразуется в 64-разрядное значение (предполагалось 64-разрядное смещение?)
+D:\SCHOOL\2-sem-programming\find_del_z2\find_del_z2\find_del_z2.cpp(36,16): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+  find_del_z2.vcxproj -> D:\SCHOOL\2-sem-programming\find_del_z2\Debug\find_del_z2.exe

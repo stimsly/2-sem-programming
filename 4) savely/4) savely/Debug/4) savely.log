@@ -1,0 +1,12 @@
+﻿  4-Granin-9a.cpp
+  all.cpp
+  form_x.cpp
+  form_y.cpp
+  l_x.cpp
+  l_y.cpp
+  Создание кода...
+form_x.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall info::set(char,int)" (?set@info@@QAEXDH@Z) в функции "public: __thiscall l_x::l_x(char * const,int,class l_x *)" (??0l_x@@QAE@QADHPAV0@@Z).
+form_x.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall info::set_size(int)" (?set_size@info@@QAEXH@Z) в функции "public: __thiscall l_x::l_x(char * const,int,class l_x *)" (??0l_x@@QAE@QADHPAV0@@Z).
+l_x.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: int __thiscall info::get_size(void)" (?get_size@info@@QAEHXZ) в функции "public: int __thiscall l_x::size_cur(void)" (?size_cur@l_x@@QAEHXZ).
+l_x.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: char __thiscall info::get(int)" (?get@info@@QAEDH@Z) в функции "public: char __thiscall l_x::get_i(int)" (?get_i@l_x@@QAEDH@Z).
+D:\SCHOOL\2-sem-programming\4) savely\Debug\4) savely.exe : fatal error LNK1120: неразрешенных внешних элементов: 4

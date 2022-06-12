@@ -12,6 +12,7 @@ void l_y::get_all_line(char(&a)[100], int& i) {
 			a[i + j] = name.get_cur()->get_i(j);
 		}
 		i += sz;
+		
 		name.set_cur(name.get_cur()->get_next());
 	}
 }

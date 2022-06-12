@@ -1,6 +1,0 @@
-5
-100 bread
-50 meat
-100 solt
-10 egg
-10 cheaps
