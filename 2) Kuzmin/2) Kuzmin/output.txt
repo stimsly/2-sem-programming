@@ -1,0 +1,104 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Primary text: 
+#include <iostream>
+
+using namespace std;
+
+int a[100]; // create array
+
+int main(){
+	// считываем колво элементов}{{{}{}}}{}}}}}{{{{{
+	int n;
+	cin >> n;
+	// read array}
+	for(int i = 0; i < n; i++){
+		cin >> a[i];
+	}
+	// add value for answer
+	int ans = 0;
+	/* check how many elements where{} 
+	//}}} 
+	the v{alue before less the value after */
+	for(int i = 0; i < n - 1; i++){
+		// check this  
+		if(a[i] < a[i+1]) {
+			ans++; // increase ans{wer
+		}
+
+	}
+	{
+	}
+	//{} print answer{}
+	cout << ans << endl;
+	return 0;
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END.
+
+Количество комментариев: 8
+Началось новое утверждение
+
+int main(){
+	// считываем колво элементов
+	int n;
+	cin >> n;
+	// read array
+	for(int i = 0; i < n; i++){
+		cin >> a[i];
+	}
+	// add value for answer
+	int ans = 0;
+	/* check how many elements where 
+	// 
+	the value before less the value after */
+	for(int i = 0; i < n - 1; i++){
+		// check this  
+		if(a[i] < a[i+1]) {
+			ans++; // increase answer
+		}
+
+	}
+	{
+	}
+	// print answer
+	cout << ans << endl;
+	return 0;
+}
+Это утверждение занимает: 26 строк.
+
+
+Началось новое утверждение
+
+	for(int i = 0; i < n; i++){
+		cin >> a[i];
+	}
+Это утверждение занимает: 3 строк.
+
+
+Началось новое утверждение
+
+	for(int i = 0; i < n - 1; i++){
+		// check this  
+		if(a[i] < a[i+1]) {
+			ans++; // increase answer
+		}
+
+	}
+Это утверждение занимает: 7 строк.
+
+
+Началось новое утверждение
+
+		if(a[i] < a[i+1]) {
+			ans++; // increase answer
+		}
+Это утверждение занимает: 3 строк.
+
+
+Началось новое утверждение
+
+	{
+	}
+Это утверждение занимает: 2 строк.
+
+
+Общее количество утверждений: 5
