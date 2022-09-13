@@ -1,0 +1,2 @@
+Primary string: &yus     dhjbnk sjadhkn   jaskdna    ajsdnsaj
+Result string: &yus dhjbnk sjadhkn jaskdna ajsdnsaj

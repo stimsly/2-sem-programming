@@ -6,7 +6,7 @@
 
 class all {
 public:
-	form_y a, b, c;
+	form_y a, b;
 	void progress();
 	void input(ifstream &f1, ifstream &f2) {
 		a.input(f1);
@@ -17,8 +17,6 @@ public:
 		a.output(fout);
 		fout << "Второй список:\n";
 		b.output(fout);
-		fout << "Результирующий список:\n";
-		c.output(fout);
 	}
 };
 
