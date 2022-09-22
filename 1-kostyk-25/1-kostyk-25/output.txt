@@ -1,2 +1,2 @@
-Primary string: &yus     dhjbnk sjadhkn   jaskdna    ajsdnsaj
-Result string: &yus dhjbnk sjadhkn jaskdna ajsdnsaj
+Primary string: yus     dhjbnk sjadhkn   jaskdna    ajsdnsajk
+Result string: yus dhjbnk sjadhkn jaskdna ajsdnsajk

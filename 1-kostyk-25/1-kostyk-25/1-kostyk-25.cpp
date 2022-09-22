@@ -6,57 +6,49 @@ using namespace std;
 const int N = 60;
 
 class str {
-private:
-	char a[N];
+public:
+	char a[N]{};
 	char letter;
 	int len = 0;
-public:
-	int getlen() {
-		return len;
+} s;
+
+void inp(ifstream& f_s, int t) { // считываем строку 
+	if (!f_s.is_open()) {
+		cout << "File(s) can not be open!";
+		return;
 	}
-	void setlen(int t) {
-		len = t;
+	char o = ' ';
+	int n = N;
+	if (t == 1) {
+		f_s.get(o); // если считываем до маркера
 	}
-	char get_char(int i) {
-		return a[i];
+	else {
+		f_s >> n;// если определенное кол во символов
+		f_s.get();
 	}
-	void inp(ifstream& f_s, int t) { // считываем строку 
-		if (!f_s.is_open()) {
-			cout << "File(s) can not be open!";
-			return;
-		}
-		char o = ' ';
-		int n = N;
-		if (t == 1) {
-			f_s.get(o); // если считываем до маркера
+	int len = 0;
+	n = max(0, min(n, N));
+	while (f_s.get(s.a[len]) && len < n && (s.a[len] != o || o == ' ')) {
+		len++;
+	}
+	s.len = len;
+}
+void out(ofstream& f) {
+	for (int i = 0; i < s.len; i++) f << s.a[i];
+	if (s.len == 0) f << "empty";
+	f << endl;
+}
+void process() {
+	for (int i = 0; i < s.len - 1;) {
+		if (s.a[i] == ' ' and s.a[i + 1] == ' ') { // если два пробела рядом убираем один из
+			for (int j = i + 1; j < s.len - 1; j++) s.a[j] = s.a[j + 1];
+			s.len--;
 		}
 		else {
-			f_s >> n;// если определенное кол во символов
-			f_s.get();
-		}
-		n = max(0, min(n, N));
-		while (f_s.get(a[len]) && len < n && (a[len] != o || o == ' ')) {
-			len++;
+			i++;
 		}
 	}
-	void out(ofstream& f) {
-		for (int i = 0; i < len; i++) f << a[i];
-		if (len == 0) f << "empty";
-		f << endl;
-	}
-	void process() {
-		for (int i = 0; i < len - 1;) {
-			if (a[i] == ' ' and a[i + 1] == ' ') { // если два пробела рядом убираем один из
-				for (int j = i + 1; j < len - 1; j++) a[j] = a[j + 1];
-				len--;
-			}
-			else {
-				i++;
-			}
-		}
-		setlen(len);
-	}
-};
+}
 
 
 int main() {
@@ -66,13 +58,11 @@ int main() {
 	ifstream fin("input.txt");
 	ofstream fout("output.txt");
 
-	str s;
-
-	s.inp(fin, t);
+	inp(fin, t);
 	fout << "Primary string: ";
-	s.out(fout);
-	s.process();
+	out(fout);
+	process();
 	fout << "Result string: ";
-	s.out(fout);
+	out(fout);
 	return 0;
 }
